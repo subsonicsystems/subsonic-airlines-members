@@ -1,0 +1,56 @@
+body,
+.ui-widget,
+.ui-widget button {
+    font-family: Meiryo;
+    font-size: 13px;
+}
+
+a:link,
+a:visited {
+    color: #337ab7;
+}
+
+a:hover,
+a:active {
+    color: #23527c;
+}
+
+.width6 {
+    width: 6px;
+}
+
+.width10 {
+    width: 10px;
+}
+
+.height30 {
+    height: 30px;
+}
+
+.height300 {
+	height: 300px;
+}
+
+.header {
+	width: 100%;
+}
+
+.register-input-panel-grid tr,
+.register-input-panel-grid td {
+    border: none !important;
+}
+
+.register-input-panel-grid-username-input-text {
+    width: 200px;
+}
+
+.register-input-panel-grid-password-password {
+   width: 200px;
+}
+
+.register-input-button-panel-grid tr,
+.register-input-button-panel-grid td {
+    padding: 0 !important;
+    border: none !important;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:body>
+        <ui:composition template="/WEB-INF/templates/default.xhtml">
+            <ui:define name="content">
+                <h:outputText value="会員登録"/>
+                <p/>
+                <h:outputText value="会員情報を入力してください（*は必須項目です）"/>
+                <p/>
+                <h:form id="form">
+                    <p:panelGrid id="grid" columns="3" styleClass="register-input-panel-grid">
+                        <p:outputLabel for="username" value="ユーザ名 *"/>
+                        <p:inputText id="username" value="#{registerInputView.user.username}"
+                                     styleClass="register-input-panel-grid-username-input-text"/>
+                        <p:message for="username"/>
+                        <p:outputLabel for="password" value="パスワード *"/>
+                        <p:password id="password" value="#{registerInputView.user.password}"
+                                    redisplay="true" styleClass="register-input-panel-grid-password-password"/>
+                        <p:message for="password"/>
+                    </p:panelGrid>
+                    <div class="height30"></div>
+                    <p:panelGrid columns="4" styleClass="register-input-button-panel-grid">
+                        <div class="width10"></div>
+                        <p:button value="戻る" icon="ui-icon-carat-1-w" outcome="/index"/>
+                        <div class="width6"></div>
+                        <p:commandButton value="登録" update="grid"
+                                         action="#{registerInputView.save()}"/>
+                    </p:panelGrid>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
