@@ -3,7 +3,6 @@ package info.subsonic.subsonicairlines.members.view.register;
 import info.subsonic.subsonicairlines.members.model.User;
 import info.subsonic.subsonicairlines.members.service.UserService;
 
-import java.io.Serializable;
 import java.util.ResourceBundle;
 
 import javax.annotation.PostConstruct;
@@ -23,12 +22,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 @Named("registerInputView")
 @RequestScoped
-public class InputView implements Serializable {
-
-    /**
-     * The serial version UID.
-     */
-    private static final long serialVersionUID = 1L;
+public class InputView {
 
     /**
      * The UserService.
