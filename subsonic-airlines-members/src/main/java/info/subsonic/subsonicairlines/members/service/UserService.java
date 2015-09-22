@@ -2,7 +2,6 @@ package info.subsonic.subsonicairlines.members.service;
 
 import info.subsonic.subsonicairlines.members.model.User;
 
-import java.io.Serializable;
 import java.util.Calendar;
 
 import javax.ejb.Stateless;
@@ -14,12 +13,7 @@ import javax.persistence.TypedQuery;
  * This class is for user service.
  */
 @Stateless
-public class UserService implements Serializable {
-
-    /**
-     * The serial version UID.
-     */
-    private static final long serialVersionUID = 1L;
+public class UserService {
 
     /**
      * The EntityManager.
