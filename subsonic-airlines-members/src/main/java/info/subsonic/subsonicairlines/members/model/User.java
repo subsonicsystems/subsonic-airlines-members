@@ -1,6 +1,5 @@
 package info.subsonic.subsonicairlines.members.model;
 
-import java.io.Serializable;
 import java.util.Calendar;
 
 import javax.persistence.Column;
@@ -21,12 +20,7 @@ import javax.persistence.Version;
 @Entity
 @Table(name = "user")
 @NamedQueries({ @NamedQuery(name = User.EXISTS_USERNAME, query = "SELECT COUNT(u) FROM User u WHERE LOWER(u.username) = :username") })
-public class User implements Serializable {
-
-    /**
-     * The serial version UID.
-     */
-    private static final long serialVersionUID = 1L;
+public class User {
 
     /**
      * The min length of username.
